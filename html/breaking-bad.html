@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemon&family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/bb.css" />
+    <link rel="shortcut icon" href="../img/icon.png">
+    <title>Romy Era</title>
+  </head>
+  <body>
+    <style>
+      :root {
+        --pink: #de5d83;
+        --black: #101116;
+        --gray: #bebebe;
+        --light-gray: #d9d9d9;
+        --comment-box: #171b27;
+        --comment: #555d68;
+        --comment-date: #8a8a8a;
+        --warning: #e22c2c;
+        --yellow: #eee62f;
+        --sea: #08b0f7;
+        --green: #21de87;
+        --gold: #e8d717;
+      }
+      .button {
+        width: fit-content;
+        display: flex;
+        padding: 1.2em 1rem;
+        cursor: pointer;
+        gap: 0.4rem;
+        font-weight: bold;
+        border-radius: 30px;
+        text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+        background: linear-gradient(
+            15deg,
+            #880088,
+            #aa2068,
+            #cc3f47,
+            #de6f3d,
+            #f09f33,
+            #de6f3d,
+            #cc3f47,
+            #aa2068,
+            #880088
+          )
+          no-repeat;
+        background-size: 300%;
+        color: #fff;
+        border: none;
+        background-position: left center;
+        box-shadow: 0 30px 10px -20px rgba(0, 0, 0, 0.2);
+        transition: background 0.3s ease;
+      }
+
+      .button:hover {
+        background-size: 320%;
+        background-position: right center;
+      }
+
+      .button:hover svg {
+        fill: #fff;
+      }
+
+      .button svg {
+        width: 23px;
+        fill: #f09f33;
+        transition: 0.3s ease;
+      }
+      
+    </style>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <h1>movie</h1>
+        </div>
+        <nav class="navBar">
+          <div class="open-btn" id="open">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="nav-items">
+            <ul class="list">
+              <a href="index.html">
+                <button class="button">
+                  <svg
+                    height="16"
+                    width="16"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    viewBox="0 0 1024 1024"
+                  >
+                    <path
+                      d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"
+                    ></path>
+                  </svg>
+                  Back
+                </button>
+              </a>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="breaking-bad">
+        <div class="movie-description">
+          <div class="movie-image">
+            <img src="../img/tv/breaking-bad.svg" alt="" />
+          </div>
+          <div class="movie-content">
+            <div class="movie-trailer">
+              <h1>Breaking Bad</h1>
+              <div class="movie-type">
+                <p>Crime</p>
+                <div class="line"></div>
+                <p>Drama</p>
+                <div class="line"></div>
+                <p>Thriller</p>
+              </div>
+            </div>
+            <div class="imdb">
+              <p>IMDb: 9,5</p>
+              <p>5 Season</p>
+              <p>18+</p>
+              <p>USA, 2008,2013</p>
+              <p>Creator: <span>Vince Gilligan</span></p>
+              <p>Actors: <span>Bryan Cranston, Aaron Paul, Anna Gunn</span></p>
+            </div>
+            <div class="trailer">
+              <div class="save">
+                <i class="fa-regular fa-bookmark"></i>
+                <i class="fa-regular fa-circle-down"></i>
+                <i class="fa-regular fa-share-from-square"></i>
+              </div>
+              <div>
+                <button class="btn-trailer">Watch Trailer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="movie-desc-2">
+      <h2>Description</h2>
+      <p>
+        Breaking Bad is an American crime drama television series created and
+        produced by Vince Gilligan. Set and filmed in Albuquerque, New Mexico,
+        the series follows Walter White(Bryan Cranston), an underpaid,
+        overqualified, and dispirited high-school chemistry teacher who is
+        struggling with a recent diagnosis of stage three lung cancer. White
+        turns to a life of crime and partners with a former student, Jesse
+        Pinkman(Aaron Paul), to produce and distribute methamphetamineto secure
+        his family's financial future before he dies, while navigating the
+        dangers of the criminal underworld. The show aired on AMC from January
+        20, 2008, to September 29, 2013, consisting of five seasons for a total
+        of 62 episodes.
+      </p>
+      <div class="bb-img">
+        <img src="../img/bg/bb.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="comments">
+      <h2>Comments</h2>
+      <div class="comment-box">
+        <input type="text" placeholder="Leave a Comment" />
+      </div>
+
+      <div class="users">
+        <div class="user">
+          <div class="profile">
+            <img src="../img/profile/nina.svg" alt="" />
+          </div>
+          <div class="user-com">
+            <div class="info">
+              <div class="name">
+                <h4>Nia Rene</h4>
+              </div>
+              <div class="date">
+                <p>25/01/2023 <span>11:36 PM</span></p>
+              </div>
+            </div>
+            <div class="comment">
+              <p>
+                One of the greatest shows ever, the pacing is excellent. The
+                characters are well developed and entertaining.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="user">
+          <div class="profile">
+            <img src="../img/profile/dannie.svg" alt="" />
+          </div>
+          <div class="user-com">
+            <div class="info">
+              <div class="name">
+                <h4>Dannie Giles</h4>
+              </div>
+              <div class="date">
+                <p>23/01/2023 <span>04:28 PM</span></p>
+              </div>
+            </div>
+            <div class="comment">
+              <p>
+                I cannot stress enough how good this show is. I've watched a lot
+                of TV in my life and this show still remains the best show I've
+                ever seen.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="user">
+          <div class="profile">
+            <img src="../img/profile/ronnie.svg" alt="" />
+          </div>
+          <div class="user-com">
+            <div class="info">
+              <div class="name">
+                <h4>Ronnie Joss</h4>
+              </div>
+              <div class="date">
+                <p>20/01/2023 <span>09:18 AM</span></p>
+              </div>
+            </div>
+            <div class="comment">
+              <p class="warning">Warning: Spoiler</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div>
+        <h4>Movies</h4>
+        <h4>TV Series</h4>
+        <h4>Animated Movies</h4>
+      </div>
+      <div>
+        <h4>Privacy Policy</h4>
+        <h4>Cookie Policy</h4>
+        <h4>Terms of Use</h4>
+      </div>
+      <div>
+        <h4>Help Center</h4>
+        <h4>Support</h4>
+        <h4>FAQ</h4>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="footer-social">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+      integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
